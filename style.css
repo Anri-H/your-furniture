@@ -7,7 +7,7 @@
   box-sizing: border-box;
   font-family: Garamond, serif;
   letter-spacing: 2px;
-  transition: 1s;
+  /* transition: 1s; */
 }
 
 body {
@@ -109,5 +109,17 @@ p {
 #about-us article {
   display: flex;
   justify-content: center;
-  padding: 10px;
+  /* flex-flow: wrap; */
+  align-items: center;
+  margin: 10px;
+  color: var(--back-color);
+  background-color: var(--main-color);
+}
+
+#about-us article img{
+  width: 50%;
+}
+
+#about-us article div{
+  padding: 20px;
 }
