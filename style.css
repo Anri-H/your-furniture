@@ -31,19 +31,37 @@ h6 {
 
 #header-page {
   padding: 10px;
-  background-image: url(img/kofe.jpg);
+  background-image: url(./img/kitchen.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100%;
   height: 100vh;
 }
 
-.header-nav {
+#header-page img {
+  position: absolute;
+  top: 10%;
+  left: 8%;
+}
+
+#header-page div {
   color: var(--main-color);
-  background-color: var(--back-color);
+  background-color: rgba(41, 41, 41, 0.438);
+  border-radius: 0 0 20px 0;
+  position: absolute;
+  top: 60%;
+  left: 5%;
+  width: 40%;
+}
+
+.header-nav {
+  position: absolute;
+  top: 50px;
+  right: 10px;
   opacity: 0.8;
-  display: flex;
-  justify-content: space-around;
+  background-color: var(--back-color);
+  padding: 10px 0;
+  width: 700px;
 }
 
 .header-nav a {
@@ -70,6 +88,7 @@ h6 {
   display: flex;
   justify-content: space-around;
   flex-flow: wrap;
+  order: 4;
 }
 
 #portfolio-section article {
@@ -104,22 +123,77 @@ p {
 #about-us {
   color: var(--main-color);
   padding: 30px;
+  width: 100%;
 }
 
 #about-us article {
   display: flex;
-  justify-content: center;
-  /* flex-flow: wrap; */
+  justify-content: space-between;
   align-items: center;
-  margin: 10px;
+  margin: 20px;
+  /* padding: 20px; */
   color: var(--back-color);
   background-color: var(--main-color);
 }
 
-#about-us article img{
-  width: 50%;
+#about-us article img {
+  width: 500px;
 }
 
-#about-us article div{
+#about-us article div {
+  width: 400px;
+  padding: 10px;
+  margin: auto;
+}
+
+#contact {
+  color: var(--back-color);
+  background-color: var(--main-color);
+  padding: 30px;
+}
+
+.form {
+  margin: auto;
+  border-radius: 10px;
+  width: 80%;
   padding: 20px;
+  color: var(--main-color);
+  background-color: var(--back-color);
+}
+
+.form .name,
+.email,
+.tel {
+  display: block;
+  margin: 10px auto;
+  padding: 10px;
+  width: 90%;
+  border-radius: 0 20px 0 0;
+}
+
+.form .province,
+.gen {
+  display: block;
+  padding: 10px;
+  margin: 10px;
+}
+
+.form .check {
+  margin: 10px;
+  padding: 10px;
+}
+
+.form textarea {
+  margin: 10px;
+  padding: 10px;
+  width: 70%;
+}
+
+@media screen and (max-width: 900px) {
+  #about-us article img {
+    display: none;
+  }
+  .form {
+    width: 100%;
+  }
 }
