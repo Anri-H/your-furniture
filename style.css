@@ -234,13 +234,10 @@ footer {
   background-color: var(--back-color);
 }
 
-footer img {
-  margin: 10px;
-}
-
 footer .companies {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  flex-flow: wrap;
 }
 
 @media screen and (max-width: 900px) {
