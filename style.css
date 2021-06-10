@@ -29,21 +29,47 @@ h6 {
   text-shadow: 1px 1px 2px #000;
 }
 
+
+
+.log-in-form {
+  width: 400px;
+  /* border: 1px solid black; */
+  padding: 10px;
+  background-color: rgba(41, 41, 41, 0.438);
+  align-self: center;
+}
+
+.log-in-form * {
+  display: block;
+  padding: 10px;
+  margin: 10px auto;
+  width: 100%;
+  align-self: center;
+}
+
+.header-main {
+  width: 400px;
+  background-color: rgba(41, 41, 41, 0.438);
+  align-self: center;
+  padding: 10px;
+}
+
+.header-info {
+  display: flex;
+  justify-content: space-around;
+  flex-flow: wrap;
+  color: var(--main-color);
+  margin-top: 50px;
+}
+
 #header-page {
   padding: 10px 0;
   background-image: url(./img/kitchen.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: 100%;
   height: 100vh;
 }
 
-#header-page div {
-  color: var(--main-color);
-  background-color: rgba(41, 41, 41, 0.438);
-  position: absolute;
-  bottom: 10%;
-}
 
 .header-nav {
   display: flex;
@@ -56,9 +82,7 @@ h6 {
   justify-content: space-between;
   align-content: center;
   flex-flow: wrap;
-  position: absolute;
-  top: 50px;
-  height: 50px;
+  margin-top: 20px;
   width: 100%;
   opacity: 0.8;
   background-color: var(--back-color);
@@ -68,13 +92,12 @@ h6 {
   margin: auto;
   color: var(--main-color);
   text-decoration: none;
-  /* font-size: 20px; */
 }
 
 .nav-bar h1:hover {
   color: #fff;
   cursor: pointer;
-  /* text-shadow: 2px 2px 2px black; */
+  text-shadow: 2px 2px 2px black;
 }
 
 .header-nav a {
@@ -168,7 +191,6 @@ a {
 
 #contact {
   color: var(--main-color);
-  /* background-color: var(--main-color); */
   background-image: url(./img/kitchen.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -177,7 +199,6 @@ a {
 
 .form {
   margin: auto;
-  padding: 20px;
 }
 
 .form .name,
@@ -192,7 +213,6 @@ a {
 .form article {
   display: flex;
   justify-content: space-between;
-  /* flex-flow: wrap; */
 }
 
 .form .gen-province {
@@ -227,21 +247,21 @@ a {
   padding: 10px;
   width: 100%;
   height: 200px;
-  resize: vertical;
+  resize: none;
 }
 
-.form .submit {
+.submit {
   width: 100%;
   height: 40px;
   cursor: pointer;
-  border-radius: 10px;
+  /* border-radius: 10px; */
   font-size: 20px;
   text-shadow: 1px 1px 2px #000;
   color: var(--main-color);
   background-color: rgba(41, 41, 41, 0.5);
 }
 
-.form .submit:hover {
+.submit:hover {
   color: var(--back-color);
   background-color: var(--main-color);
 }
@@ -280,7 +300,6 @@ footer .companies {
 .footer-information,
 .footer-help,
 .footer-contact {
-  /* display: block; */
   padding: 10px;
   margin: 10px;
 }
@@ -299,10 +318,14 @@ footer .companies {
     display: none;
   }
 
+  #header-page{
+    height: auto;
+  }
+
   .form article {
     display: block;
   }
-  .form textarea {
+  .form .gen-province {
     width: 300px;
   }
 }
