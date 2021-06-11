@@ -29,7 +29,8 @@ h6 {
   text-shadow: 1px 1px 2px #000;
 }
 
-.sign-in, .sign-up {
+.sign-in,
+.sign-up {
   width: 400px;
   /* border: 1px solid black; */
   padding: 20px;
@@ -37,7 +38,8 @@ h6 {
   align-self: center;
 }
 
-.sign-in span, .sign-up span {
+.sign-in span,
+.sign-up span {
   cursor: pointer;
 }
 
@@ -63,7 +65,7 @@ h6 {
 
 .header-main {
   width: 400px;
-  background-color: rgba(41, 41, 41, 0.438);
+  /* background-color: rgba(41, 41, 41, 0.438); */
   align-self: center;
   padding: 10px;
 }
@@ -113,6 +115,17 @@ h6 {
   text-shadow: 2px 2px 2px black;
 }
 
+.button-menu {
+  width: 50px;
+  height: 50px;
+  display: none;
+  padding: 10px;
+  margin: 10px;
+  cursor: pointer;
+  background-color: rgba(199, 199, 199, 0.5);
+  border-radius: 5px;
+}
+
 .header-nav a {
   color: var(--main-color);
   margin: auto;
@@ -121,6 +134,7 @@ h6 {
   text-decoration: none;
   font-size: 20px;
   text-align: center;
+  transition: 0.5s;
 }
 
 .header-nav a:hover {
@@ -146,6 +160,7 @@ h6 {
   margin: 10px;
   border: 1px solid var(--main-color);
   width: 300px;
+  transition: 0.5s;
 }
 
 #portfolio-section article:hover {
@@ -272,6 +287,7 @@ a {
   text-shadow: 1px 1px 2px #000;
   color: var(--main-color);
   background-color: rgba(41, 41, 41, 0.5);
+  transition: 0.5s;
 }
 
 .submit:hover {
@@ -328,6 +344,14 @@ footer .companies {
 
 @media screen and (max-width: 900px) {
   #about-us article img {
+    display: none;
+  }
+
+  .button-menu {
+    display: block;
+  }
+
+  .header-nav {
     display: none;
   }
 

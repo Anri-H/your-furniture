@@ -12,12 +12,13 @@
     <header id="header-page">
       <div class="nav-bar">
         <a href="./index.html"><h1>Your-Furniture</h1></a>
+       <img src="./img/icons/menu.svg" onclick="navBar()" class="button-menu" alt="menu">       
         <nav class="header-nav">
-          <a href="./index.html#header-page">Home</a>
-          <a href="./index.html#portfolio-section">Portfolio</a>
-          <a href="./index.html#services">Services</a>
-          <a href="./index.html#about-us">About us</a>
-          <a href="./index.html#contact">Contact</a>
+          <a href="./index.html#header-page" >Home</a>
+          <a href="./index.html#portfolio-section" >Portfolio</a>
+          <a href="./index.html#services" >Services</a>
+          <a href="./index.html#about-us" >About us</a>
+          <a href="./index.html#contact" >Contact</a>
         </nav>
       </div>
       <article class="header-info">
@@ -308,17 +309,6 @@
         <img src="./img/icons/t.png" width="30px" alt="twitter" />
       </div>
     </footer>
-    <script>
-      function sign() {
-        let sign_in = document.querySelector(".sign-in").style.display;
-        if (sign_in === "block") {
-          document.querySelector(".sign-in").style.display = "none";
-          document.querySelector(".sign-up").style.display = "block";
-        } else {
-          document.querySelector(".sign-in").style.display = "block";
-          document.querySelector(".sign-up").style.display = "none";
-        }
-      }
-    </script>
+    <script src="./main.js"></script>
   </body>
 </html>
