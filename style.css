@@ -92,6 +92,7 @@ h6 {
   display: flex;
   justify-content: space-between;
   width: 700px;
+  padding: 10px 0;
 }
 
 .nav-bar {
@@ -102,11 +103,11 @@ h6 {
   margin-top: 20px;
   width: 100%;
   opacity: 0.8;
-  background-color: var(--back-color);
+  background-color: rgba(41, 41, 41, 0.438);
 }
 
 .nav-bar a {
-  margin: auto;
+  margin: auto 0;
   color: var(--main-color);
   text-decoration: none;
 }
@@ -364,14 +365,15 @@ footer .companies {
 
   #services,
   #about-us,
-  #contact  {
+  #contact {
     padding: 10px;
   }
 
   .form article {
     display: block;
   }
-  .form .gen-province, .interests {
+  .form .gen-province,
+  .interests {
     max-width: 400px;
   }
 }
