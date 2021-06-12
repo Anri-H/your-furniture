@@ -2,19 +2,26 @@
   background-image: url(./img/kitchen/kitchen.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
-  height: 100vh;
+  background-position:top;
 }
 
-.action-pages{  
+.action-pages {
   display: flex;
   justify-content: space-between;
   flex-flow: wrap;
-  align-items: center;
-  margin: 20px;
+  margin: 20px auto;
   color: var(--back-color);
   background-color: var(--main-color);
 }
 
-.action-pages * {
-  flex-basis: 40%;
+.action-pages div {
+  width: 30%;
+  margin: auto;
+}
+
+@media screen and (max-width: 900px) {
+  .action-pages * {
+    flex-basis: 100%;
+    width: 100%;
+  }
 }
