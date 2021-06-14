@@ -20,7 +20,7 @@
 }
 
 @media screen and (max-width: 900px) {
-  .action-pages * {
+  .action-pages .action-el {
     flex-basis: 100%;
     width: 100%;
   }
