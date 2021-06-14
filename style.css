@@ -78,7 +78,7 @@ h6 {
   margin-top: 50px;
 }
 
-#header-page {
+.header-page {
   padding: 10px 0;
   background-image: url(./img/fon.jpg);
   background-repeat: no-repeat;
@@ -145,19 +145,19 @@ h6 {
   color: var(--back-color);
 }
 
-#portfolio-section {
+.portfolio-section {
   color: var(--main-color);
   padding: 30px;
 }
 
-#portfolio-section div {
+.portfolio-section div {
   display: flex;
   justify-content: space-around;
   flex-flow: wrap;
   /* order: 2; */
 }
 
-#portfolio-section article {
+.portfolio-section article {
   color: var(--main-color);
   opacity: 0.7;
   margin: 10px;
@@ -166,24 +166,24 @@ h6 {
   transition: 0.3s;
 }
 
-#portfolio-section article:hover {
+.portfolio-section article:hover {
   opacity: 1;
 }
 
-#portfolio-section article h3,
+.portfolio-section article h3,
 p,
 a {
   text-decoration: none;
   padding: 0 20px;
 }
 
-#services {
+.services {
   color: var(--back-color);
   background-color: var(--main-color);
   padding: 30px;
 }
 
-#services .list-services {
+.services .list-services {
   background-color: var(--back-color);
   color: var(--main-color);
   padding: 30px;
@@ -191,17 +191,17 @@ a {
   border-radius: 10px;
 }
 
-#services .list-services li {
+.services .list-services li {
   margin: 10px;
 }
 
-#about-us {
+.about-us {
   color: var(--main-color);
   padding: 30px;
   width: 100%;
 }
 
-#about-us article {
+.about-us article {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -210,17 +210,17 @@ a {
   background-color: var(--main-color);
 }
 
-#about-us article img {
+.about-us article img {
   width: 500px;
 }
 
-#about-us article div {
+.about-us article div {
   width: 400px;
   padding: 10px;
   margin: auto;
 }
 
-#contact {
+.contact {
   color: var(--main-color);
   background-image: url(./img/kitchen.jpg);
   background-repeat: no-repeat;
@@ -347,7 +347,7 @@ footer .companies {
 }
 
 @media screen and (max-width: 900px) {
-  #about-us article img {
+  .about-us article img {
     display: none;
   }
 
@@ -359,13 +359,13 @@ footer .companies {
     display: none;
   }
 
-  #header-page {
+  .header-page {
     height: auto;
   }
 
-  #services,
-  #about-us,
-  #contact {
+  .services,
+  .about-us,
+  .contact {
     padding: 10px;
   }
 
