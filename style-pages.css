@@ -1,5 +1,4 @@
 .header-page {
-  background-image: url(./img/kitchen/kitchen.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position:top;
@@ -7,15 +6,15 @@
 
 .action-pages {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-flow: wrap;
   margin: 20px auto;
   color: var(--back-color);
   background-color: var(--main-color);
 }
 
-.action-pages div {
-  width: 30%;
+.action-pages .action-el {
+  width: 40%;
   margin: auto;
 }
 
