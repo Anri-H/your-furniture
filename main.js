@@ -14,3 +14,12 @@ function navBar() {
     ? (document.querySelector(".header-nav").style.display = "none")
     : (document.querySelector(".header-nav").style.display = "block");
 }
+
+function userName() {
+  const reg = /^[a-zA-Z0-9]+([._]?[a-zA-Z0-9]+)*$/;
+  if (!reg.test(this.value)) {
+    alert("invalid username");
+  }
+}
+
+document.querySelector(".username").addEventListener("input", userName);
