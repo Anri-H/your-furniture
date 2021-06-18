@@ -14,29 +14,52 @@ buttonMenu.addEventListener("click", () => {
   document.querySelector(".header-nav").classList.toggle("show");
 });
 
+// validation-start
 const notification = document.querySelector(".notification");
 function userName() {
   const reg = /^[a-zA-Z0-9]+([._]?[a-zA-Z0-9]+)*$/;
-  if (!reg.test(this.value) && this.value !== "") {
-    notification.style.display = "block";
-    document.querySelector(".user-name-validation").style.display = "block";
+  if (!reg.test(this.value)) {
+    this.style.color = "red";
   } else {
-    document.querySelector(".user-name-validation").style.display = "none";
-    notification.style.display = "none";
+    this.style.color = "black";
   }
 }
 
 function email() {
   const reg = /^\S+@\S+\.\S+$/;
-  if (!reg.test(this.value) && this.value !== "") {
-    notification.style.display = "block";
-    document.querySelector(".email-validation").style.display = "block";
+  if (!reg.test(this.value)) {
+    this.style.color = "red";
   } else {
-    document.querySelector(".email-validation").style.display = "none";
-    notification.style.display = "none";
+    this.style.color = "black";
   }
 }
 
-document.querySelector(".username").addEventListener("input", userName);
+function tel() {
+  const reg = /^0[0-9]{8}$/;
+  if (!reg.test(this.value)) {
+    this.style.color = "red";
+  } else {
+    this.style.color = "black";
+  }
+}
 
-document.querySelector(".email").addEventListener("input", email);
+document.querySelectorAll(".username").forEach((el) => {
+  el.addEventListener("input", userName);
+});
+
+document.querySelectorAll(".email").forEach((el) => {
+  el.addEventListener("input", email);
+});
+
+document.querySelector(".tel").addEventListener("input", tel);
+
+// function checkSubmit(event) {  
+//   if (userNam.style.color === "red") {
+//       event.preventDefault();
+//     notification.style.display = "block";
+//   } else submit(document.querySelector(".form-submit"));  
+// }
+
+// document.querySelector(".form-submit").addEventListener("click", checkSubmit);
+
+// validation-end
