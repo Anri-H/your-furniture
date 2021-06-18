@@ -14,3 +14,10 @@ function navBar() {
     ? (document.querySelector(".header-nav").style.display = "none")
     : (document.querySelector(".header-nav").style.display = "block");
 }
+
+document.querySelector(".username").addEventListener("input", (event) => {
+  if (event === "^[A-Za-z]\\w{5,29}$") {
+    alert("sxal");
+  }
+});
+
