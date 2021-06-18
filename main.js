@@ -15,9 +15,12 @@ function navBar() {
     : (document.querySelector(".header-nav").style.display = "block");
 }
 
-document.querySelector(".username").addEventListener("input", (event) => {
-  if (event === "^[A-Za-z]\\w{5,29}$") {
-    alert("sxal");
-  }
-});
 
+function userName() {
+  const reg = /^[a-zA-Z0-9]+([._]?[a-zA-Z0-9]+)*$/;
+  if (!reg.test(this.value)) {
+    alert("invalid username");
+  }
+}
+
+document.querySelector(".username").addEventListener("input", userName);
