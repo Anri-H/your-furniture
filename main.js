@@ -9,18 +9,34 @@ function sign() {
   }
 }
 
-function navBar() {
-  document.querySelector(".header-nav").style.display === "block"
-    ? (document.querySelector(".header-nav").style.display = "none")
-    : (document.querySelector(".header-nav").style.display = "block");
-}
+const buttonMenu = document.querySelector(".button-menu");
+buttonMenu.addEventListener("click", () => {
+  document.querySelector(".header-nav").classList.toggle("show");
+});
 
-
+const notification = document.querySelector(".notification");
 function userName() {
   const reg = /^[a-zA-Z0-9]+([._]?[a-zA-Z0-9]+)*$/;
-  if (!reg.test(this.value)) {
-    alert("invalid username");
+  if (!reg.test(this.value) && this.value !== "") {
+    notification.style.display = "block";
+    document.querySelector(".user-name-validation").style.display = "block";
+  } else {
+    document.querySelector(".user-name-validation").style.display = "none";
+    notification.style.display = "none";
+  }
+}
+
+function email() {
+  const reg = /^\S+@\S+\.\S+$/;
+  if (!reg.test(this.value) && this.value !== "") {
+    notification.style.display = "block";
+    document.querySelector(".email-validation").style.display = "block";
+  } else {
+    document.querySelector(".email-validation").style.display = "none";
+    notification.style.display = "none";
   }
 }
 
 document.querySelector(".username").addEventListener("input", userName);
+
+document.querySelector(".email").addEventListener("input", email);
